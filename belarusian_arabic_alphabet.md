@@ -81,7 +81,7 @@ In the prompt, the AI is instructed to refer to the table below when trying to c
 
 
 ## The prompt
-The prompt itself. Maybe far from perfection - could be futher improved. Note, the Cyrillic script is normally used to write in Belarusian nowadays, but the Latin-Belarusian script exists as well, and it's a better option in case we need an input text to "arabize" :)
+The prompt itself. Maybe far from perfection - could be further improved. Note, the Cyrillic script is normally used to write in Belarusian nowadays, but the Latin-Belarusian script exists as well, and it's a better option in case we need an input text to "arabize" :)
 
 ```
 See the text below. The firts 12 lines of one of the most know piece of the classic Belarusian poetry.
