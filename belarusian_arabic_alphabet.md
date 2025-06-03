@@ -1,5 +1,15 @@
-# Belarusian Arabic Alphabet
+# Belarusian arabic alphabet and the conversion prompt
 
+Below is my attempt to create a prompt that could convert texts in the Belarusian language from the Cyrillic/Latin script to the Arabic script. It's not just a joke :) The Belarusian-Arabic script really exists, or, to be more exact, existed in the past. What do we know about it? An article from Wikipedia would be enough for some high-level introduction:
+
+`The Belarusian Arabic alphabet or the Belarusian Arabica was based on the Perso-Arabic script and was developed in the 15th or 16th century. The Belarusian Arabic alphabet was used by the Lipka Tatars, who had been invited to settle in the eastern territories of the Grand Duchy of Lithuania—a region that now comprises modern-day Belarus. During the 14th–16th centuries they gradually stopped using their own language and started using the Ruthenian language (modern Belarusian and Ukrainian) rendered in the Belarusian Arabic alphabet. Books of that literary tradition are known in Belarusian as 'Kitab', which is Arabic for 'book' or 'written material'.` 
+
+You can read the full article [here](https://en.wikipedia.org/wiki/Belarusian_Arabic_alphabet).
+
+## The alphabet itself
+
+In the prompt, the AI is instructed to refer to the table below when trying to convert a text. Before a conversion attempt, we can use a pre-prompt like `See the table below? Let's remember it for our further work.`
+### Vowels
 | Cyrillic | Latin | Final | Medial | Initial | Sound |
 |----------|---------|-------------------------------|-------------------------------|-------------------------------|--------|
 | А а      | A a     | اَ                            | اَ                            | اَ                            | Like “a” in English “apple” (short open front unrounded vowel), e.g., أب (ʾab) |
@@ -25,7 +35,7 @@
 |          |         |                               |                               | عِ                           | “i” with pharyngeal onset, e.g., علم (ʿilm) |
 |          |         | ـي◌ٖ                          |                               |                               | Variant of “ī” with Kashmiri-style diacritic, rarely used |
 |          |         | ـى◌ٖ                          |                               |                               | Same, alternate representation |
-
+### Consonants
 
 | Cyrillic   | Latin     | Final| Medial | Initial | Isolated | Sound                                                                 |
 |------------|-------------|-----------|-----------|-------------|-------------|------------------------------------------------------------------------|
@@ -63,12 +73,56 @@
 |            |             | ـا        | ـا        | ا           | ا           | Like long “a” as in father (long low front vowel), e.g., آدم (Adam)           |
 |            |             | ـع        | ـعـ        | عـ          | ع           | Voiced pharyngeal fricative, no English equivalent, e.g., عين (eye)           |
 |            |             | ـء        | ـء        |             |             | Glottal stop like in “uh-oh” (ʔ), e.g., سأل (he asked)                         |
-
+### The "Ła-La" digraph
 
 | Cyrillic     | Latin      | Final  | Medial   | Initial   | Isolated   | Sound                                                                 |
 |--------------|--------------|------------|------------|--------------|--------------|------------------------------------------------------------------------|
 | Ла ла, Ля ля | Ła ła, La la | ـلا        | ـلا        | لا           | لا           | L followed by long 'a', like 'la' in 'la-la' |
 
+
+## The prompt
+The prompt itself. Maybe far from perfection - could be futher improved. Note, the Cyrillic script is normally used to write in Belarusian nowadays, but the Latin-Belarusian script exists as well, and it's a better option in case we need an input text to "arabize" :)
+
+```
+See the text below. The firts 12 lines of one of the most know piece of the classic Belarusian poetry.
+
+Moj rodny kut, jak ty mnie miły!
+
+Zabyć ciabie nie maju siły!
+
+Nie raz, utomleny darohaj,
+
+Žyćciom viasny maje ubohaj,
+
+K tabie ja ŭ dumkach zalataju
+
+I tam dušoju spačyvaju.
+
+O, jak by ja chacieŭ spačatku
+
+Darohu žyćcia pa paradku
+
+Prajści jašče raz, azirnucca,
+
+Sabrać z daroh kamieńni tyja,
+
+Što hubiać siły maładyja, –
+
+K viaśnie b majoj chacieŭ viarnucca.
+
+Try to rewrite the same text but using the symbols:
+Vowels – take them from the first table from the following columns: 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word)
+Consonants – 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word), "Isolated" (for a sole symbol in the word)
+Sounds (symbols) combination "Ła ła" or "La la"
+Take it from the third table from the following columns: 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Beginning of the word" (for the first symbol of a word), "Isolated" (for a sole symbol in the word)
+Note: the initial input text has the symbols corresponding to the symbols from the "Latin" column of three tables.`
+
+If you see no counterparts for a given symbol in a table, just ignore the symbol – don't print it.
+```
+### The result of one of the conversion attempts
+And that is it. 
+But please don't expect too much from it :) The Belarusian-Arabic script was introduced many centuries ago when the Belarusian phonology was somewhat different, and the script was designed to reflect how people pronounced the sounds back then, in approximately 16th century, maybe a bit later. And I'm trying to use this alphabet to write in the modern language. Anyway, an interesting experiment, I believe :)
+```
 ـمـ◌ُـي ر◌ُـدــنــي كـ◌ُـط يـاَـك طــي مــنـ◌ِ◌َ مـ◌ِـلاـي
 زاَـبــيــت ◌ِاَـبـ◌ِ◌َ نـ◌ِ◌َ مـاَـيـ◌ُ سـ◌ِـلاـي  
 نـ◌ِ◌َ راَـز اُـطـ◌ُـمــلـ◌َـنــي داَـر◌ُـهـاَـي
@@ -81,15 +135,4 @@
 سـاَـبــراَـت ز داَـر◌ُـه كـاَـمـ◌ِ◌َـنــنـ◌ِ طــيــيـاَ
 شـطـ◌ُ هـ◌ُـبـ◌ِاَـت سـ◌ِلاـي مـاَلااَـدــيــيـاَ
 ك و◌ِاَـســنـ◌ِ◌َ ب مـاَـيـ◌ُـي هـاَ◌ِ◌َـو و◌ِاَـرـنـ◌ُ
-
-
-
-Try to rewrite the same text but using the symbols:
-Vowels – take them from the first table from the following columns: 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word)
-Consonants – 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word), "Isolated" (for a sole symbol in the word)
-Sounds (symbols) combination "Ła ła" or "La la"
-Take it from the third table from the following columns: 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Beginning of the word" (for the first symbol of a word), "Isolated" (for a sole symbol in the word)
-
-Note: the initial input text has the symbols corresponding to the symbols from the "Latin" column of three tables.
-
-If you see no counterparts for a given symbol in a table, just ignore the symbol – don't print it
+```
