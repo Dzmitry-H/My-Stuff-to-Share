@@ -213,7 +213,7 @@ But please don't expect too much from it :) The Belarusian-Arabic script was int
 ```
 #### Attempt 2
 ```
-مـ◌ُـي ر◌ُـدـنـ◌ِ كـ◌ُت، يـاَك تـي مـنـ◌ِ◌َ مـ◌ِـلـي!
+ممـ◌ُـي ر◌ُـدـنـ◌ِ كـ◌ُت، يـاَك تـي مـنـ◌ِ◌َ مـ◌ِـلـي!
 
 زـاَبـ◌ِـتـ◌ِ تـيـاَبـي نـي مـاَيـ◌ُ سـيـلـي!
 
@@ -236,4 +236,3 @@ But please don't expect too much from it :) The Belarusian-Arabic script was int
 شـتـوُ هـوُبـيـاَچ سـيـلـي مـاَŁـاَديـاَ، –
 
 ك ڤـيـاَسـنـي بـ مـاَYـوُ حـاَچـيـيـو ڤـيـاَرْنـوُتـسـاَ.
-```
