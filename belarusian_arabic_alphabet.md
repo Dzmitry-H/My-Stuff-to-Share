@@ -193,9 +193,10 @@ Note: the initial input text has the symbols corresponding to the symbols from t
 
 If you see no counterparts for a given symbol in a table, just ignore the symbol – don't print it.
 ```
-### The result of one of the conversion attempts
-And that is it. 
+### Сonversion attempt results
+And that is it. The results of at least two conversion attempts.
 But please don't expect too much from it :) The Belarusian-Arabic script was introduced many centuries ago when the Belarusian phonology was somewhat different, and the script was designed to reflect how people pronounced the sounds back then, in approximately 16th century, maybe a bit later. And I'm trying to use this alphabet to write in the modern language. Anyway, an interesting experiment, I believe :)
+#### Attempt 1
 ```
 ـمـ◌ُـي ر◌ُـدــنــي كـ◌ُـط يـاَـك طــي مــنـ◌ِ◌َ مـ◌ِـلاـي
 زاَـبــيــت ◌ِاَـبـ◌ِ◌َ نـ◌ِ◌َ مـاَـيـ◌ُ سـ◌ِـلاـي  
@@ -209,4 +210,30 @@ But please don't expect too much from it :) The Belarusian-Arabic script was int
 سـاَـبــراَـت ز داَـر◌ُـه كـاَـمـ◌ِ◌َـنــنـ◌ِ طــيــيـاَ
 شـطـ◌ُ هـ◌ُـبـ◌ِاَـت سـ◌ِلاـي مـاَلااَـدــيــيـاَ
 ك و◌ِاَـســنـ◌ِ◌َ ب مـاَـيـ◌ُـي هـاَ◌ِ◌َـو و◌ِاَـرـنـ◌ُ
+```
+#### Attempt 2
+```
+مـ◌ُـي ر◌ُـدـنـ◌ِ كـ◌ُت، يـاَك تـي مـنـ◌ِ◌َ مـ◌ِـلـي!
+
+زـاَبـ◌ِـتـ◌ِ تـيـاَبـي نـي مـاَيـ◌ُ سـيـلـي!
+
+نـي رـاَز، اُتـوَمـلـيـنـي دـاَرُهـاَي،
+
+ژـيـتـ◌ِوْم ڤـيـاَسـنـي مـاَيـ◌ِ اُبـوَهـاَي،
+
+ك تـاَبـي يـا اُ دـوُمـكـاَح زـاَلاَتـاَيـو،
+
+اِ تـاَم دـوُشـوُيـو سـپـاَچـيـڤـاَيـو.
+
+اُ، يـاَك بـي يـا حـاَچـيـيـو سـپـاَچـاَتـكـو،
+
+دـاَرُهـوُ ژـيـتـ◌ِاَ پـاَ پـاَراَدـكـو
+
+پـرـاَيـچـي يـاَشـچـي رـاَز، اَزـيـرْنـوُتـسـاَ،
+
+سـاَبـرـاَت ز دـاَرُهـ كـاَمـيـنـي تـيـاَ،
+
+شـتـوُ هـوُبـيـاَچ سـيـلـي مـاَŁـاَديـاَ، –
+
+ك ڤـيـاَسـنـي بـ مـاَYـوُ حـاَچـيـيـو ڤـيـاَرْنـوُتـسـاَ.
 ```
