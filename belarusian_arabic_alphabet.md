@@ -184,7 +184,7 @@ Sabrać z daroh kamieńni tyja,
 
 K viaśnie b majoj chacieŭ viarnucca. *
 
-Try to rewrite the same text (between the * * symbols) but using the symbols:
+Try to rewrite the same text (between * *) but using the table:
 Vowels – take them from the first table from the following columns: 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word)
 Consonants – 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word), "Isolated" (for a sole symbol in the word)
 Sounds (symbols) combination "Ła ła" or "La la"
