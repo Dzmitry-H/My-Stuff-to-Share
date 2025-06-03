@@ -1,3 +1,5 @@
+# Belarusian Arabic Alphabet
+
 | Cyrillic | Latin | Final | Medial | Initial | Sound |
 |----------|---------|-------------------------------|-------------------------------|-------------------------------|--------|
 | А а      | A a     | اَ                            | اَ                            | اَ                            | Like “a” in English “apple” (short open front unrounded vowel), e.g., أب (ʾab) |
