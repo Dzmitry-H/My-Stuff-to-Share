@@ -158,9 +158,9 @@ See the table below? Let's remember it for our further work.
 The prompt itself. Maybe far from perfection - could be further improved. Note, the Cyrillic script is normally used to write in Belarusian nowadays, but the Latin-Belarusian script exists as well, and it's a better option in case we need an input text to "arabize" :)
 
 ```
-See the text below. The firts 12 lines of one of the most know piece of the classic Belarusian poetry.
+See the text below (between the * * symbols)? 
 
-Moj rodny kut, jak ty mnie miły!
+* Moj rodny kut, jak ty mnie miły!
 
 Zabyć ciabie nie maju siły!
 
@@ -182,9 +182,9 @@ Sabrać z daroh kamieńni tyja,
 
 Što hubiać siły maładyja, –
 
-K viaśnie b majoj chacieŭ viarnucca.
+K viaśnie b majoj chacieŭ viarnucca. *
 
-Try to rewrite the same text but using the symbols:
+Try to rewrite the same text (between the * * symbols) but using the symbols:
 Vowels – take them from the first table from the following columns: 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word)
 Consonants – 1. "Final" (for the last symbol of a word), "Medial" (for any symbol in the word except for the first and the last), "Initial" (for the first symbol of a word), "Isolated" (for a sole symbol in the word)
 Sounds (symbols) combination "Ła ła" or "La la"
