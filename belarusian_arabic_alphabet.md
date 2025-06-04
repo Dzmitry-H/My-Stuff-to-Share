@@ -194,7 +194,7 @@ Note: the initial input text has the symbols corresponding to the symbols from t
 If you see no counterparts for a given symbol in a table, just ignore the symbol – don't print it.
 ```
 ### Сonversion attempt results
-And that is it. The results of at least two conversion attempts.
+And that is it. The results of at least three conversion attempts.
 But please don't expect too much from it :) The Belarusian-Arabic script was introduced many centuries ago when the Belarusian phonology was somewhat different, and the script was designed to reflect how people pronounced the sounds back then, in approximately 16th century, maybe a bit later. And I'm trying to use this alphabet to write in the modern language. Anyway, an interesting experiment, I believe :)
 #### Attempt 1
 ```
