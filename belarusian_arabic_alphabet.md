@@ -1,6 +1,6 @@
 # Belarusian arabic alphabet and the conversion prompt
 
-Below is my attempt to create a prompt that could convert texts into the Belarusian language from the Cyrillic/Latin script to the Arabic script. It's not just a joke :) The Belarusian-Arabic script really exists, or, to be more exact, existed in the past. What do we know about it? An article from Wikipedia would be enough for some high-level introduction:
+Below is my attempt to create a prompt that could convert texts in the Belarusian language from the Cyrillic/Latin script to the Arabic script. It's not just a joke :) The Belarusian-Arabic script really exists, or, to be more exact, existed in the past. What do we know about it? An article from Wikipedia would be enough for some high-level introduction:
 
 `The Belarusian Arabic alphabet or the Belarusian Arabica was based on the Perso-Arabic script and was developed in the 15th or 16th century. The Belarusian Arabic alphabet was used by the Lipka Tatars, who had been invited to settle in the eastern territories of the Grand Duchy of Lithuania—a region that now comprises modern-day Belarus. During the 14th–16th centuries they gradually stopped using their own language and started using the Ruthenian language (modern Belarusian and Ukrainian) rendered in the Belarusian Arabic alphabet. Books of that literary tradition are known in Belarusian as 'Kitab', which is Arabic for 'book' or 'written material'.` 
 
